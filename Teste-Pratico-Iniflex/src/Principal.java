@@ -33,9 +33,7 @@ public class Principal
         //Remover o funcionário “João” da lista.
         funcionarios.removeIf(f -> f.nome == "João");
 
-        //Imprimir todos os funcionários com todas suas informações, sendo que:
-        //• informação de data deve ser exibido no formato dd/mm/aaaa;
-        //• informação de valor numérico deve ser exibida no formatado com separador de milhar como ponto e decimal como vírgula.
+        //Imprimir todos os funcionários com todas suas informações        
         System.out.println("========================================================================================");
 
         System.out.println("Funcionários:");
@@ -113,6 +111,8 @@ public class Principal
     
     private String retornaFuncionario(Funcionario func)
     {
+        //• informação de data deve ser exibido no formato dd/mm/aaaa;
+        //• informação de valor numérico deve ser exibida no formatado com separador de milhar como ponto e decimal como vírgula.
         String retorno = "";
 
         DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
